@@ -1,3 +1,37 @@
-img {
-	padding: 1%;
+.page {
+	margin: 36px auto;
+	width: 960px;
+}
+
+.main {
+	float: right;
+	width: 760px;
+}
+
+.leftColumn {
+	float: left;
+	width: 380px;
+}
+
+.rightColumn {
+	float: right;
+	width: 380px;
+}
+
+.navbar {
+	float: left;
+	width: 200px;
+}
+
+.pictureRow {
+	
+}
+
+.pictureRow ul {
+	list-style: none;
+}
+
+.pictureRow ul li {
+	display: inline;
+	padding-right: 20px;
 }
