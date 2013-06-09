@@ -1,30 +1,43 @@
+/* http://lea.verou.me/css3patterns/#stars */
+body {
+	background-color: #6d695c;
+	background-image:
+		repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+		repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+		linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+		linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+	background-size: 70px 120px;
+}
+
 .page {
+	background-color: #6d695c;
+	border: solid 5px;
 	margin: 36px auto;
-	width: 960px;
+	width: 90%;
 }
 
 .main {
 	float: right;
-	width: 760px;
+	width: 79.166666666667%; /* 760 / 960 */
 }
 
 .leftColumn {
 	float: left;
-	width: 380px;
+	width: 50%;
 }
 
 .rightColumn {
 	float: right;
-	width: 380px;
+	width: 50%;
 }
 
 .navbar {
 	float: left;
-	width: 200px;
+	width: 20.833333333333; /* 200 / 960 */
 }
 
 .pictureRow {
-	
+
 }
 
 .pictureRow ul {
@@ -35,3 +48,4 @@
 	display: inline;
 	padding-right: 20px;
 }
+
