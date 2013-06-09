@@ -16,6 +16,15 @@ body {
 	width: 90%;
 }
 
+.page h1 {
+	text-align: center;
+}
+
+.navbar {
+	float: left;
+	width: 20.833333333333; /* 200 / 960 */
+}
+
 .main {
 	float: right;
 	width: 79.166666666667%; /* 760 / 960 */
@@ -31,13 +40,8 @@ body {
 	width: 50%;
 }
 
-.navbar {
-	float: left;
-	width: 20.833333333333; /* 200 / 960 */
-}
-
 .pictureRow {
-
+	clear: both;
 }
 
 .pictureRow ul {
@@ -46,6 +50,4 @@ body {
 
 .pictureRow ul li {
 	display: inline;
-	padding-right: 20px;
 }
-
