@@ -1,33 +1,32 @@
-/* http://lea.verou.me/css3patterns/#argyle */
+/* http://lea.verou.me/css3patterns/#diagonal-stripes */
 body {
-	background-color: #6d695c;
-	background-image:
-		repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
-		repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
-		linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
-		linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
-	background-size: 70px 120px;
+	background-color: gray;
+	background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
 }
 
-.page {
-	background-color: #6d695c;
+#page {
+	background-color: gray;
 	border: solid 5px;
 	margin: 36px auto;
 	width: 90%;
 }
 
-.page h1 {
+#page h1 {
 	text-align: center;
+}
+
+.main {
+	padding: 50px;
 }
 
 .navbar {
 	float: left;
-	width: 20.833333333333; /* 200 / 960 */
+	width: 16.483516483516%; /* 150 / 910 */
 }
 
-.main {
+.content {
 	float: right;
-	width: 79.166666666667%; /* 760 / 960 */
+	width: 83.516483516484%; /* 760 / 910 */
 }
 
 .leftColumn {
@@ -42,7 +41,6 @@ body {
 
 .pictureRow {
 	clear: both;
-
 }
 
 .pictureRow ul {
@@ -57,18 +55,18 @@ body {
 	.navbar ul li {
 		display: inline;
 	}
+}
 
+@media screen and (max-width: 768px) {
+	.navbar,
 	.leftColumn,
 	.rightColumn {
 		float: none;
 		width: 100%;
 	}
-}
 
-@media screen and (max-width: 768px) {
-	.leftColumn,
-	.rightColumn {
-		float: none;
+	.main {
+		padding: 0px;
 	}
 }
 
