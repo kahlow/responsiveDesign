@@ -42,7 +42,7 @@ body {
 
 .pictureRow {
 	clear: both;
-	
+
 }
 
 .pictureRow ul {
@@ -51,4 +51,29 @@ body {
 
 .pictureRow ul li {
 	display: inline;
+}
+
+@media screen and (max-width: 480px) {
+	.navbar ul li {
+		display: inline;
+	}
+
+	.leftColumn,
+	.rightColumn {
+		float: none;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.leftColumn,
+	.rightColumn {
+		float: none;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.navbar ul {
+		list-style: none;
+	}
 }
