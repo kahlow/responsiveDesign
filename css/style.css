@@ -5,14 +5,16 @@ body {
 }
 
 #page {
-	background-color: gray;
-	border: solid 5px;
+	background-color: white;
 	margin: 36px auto;
 	width: 90%;
+	font-family: Helvetica;
 }
 
 #page h1 {
 	text-align: center;
+	background-color: red;
+	
 }
 
 .main {
@@ -22,25 +24,30 @@ body {
 .navbar {
 	float: left;
 	width: 16.483516483516%; /* 150 / 910 */
+	background-color: gray;
 }
 
 .content {
 	float: right;
 	width: 83.516483516484%; /* 760 / 910 */
+	background-color: lightblue;
 }
 
 .leftColumn {
 	float: left;
 	width: 50%;
+	background-color: lightyellow;
 }
 
 .rightColumn {
 	float: right;
 	width: 50%;
+	background-color: lightgreen;
 }
 
 .pictureRow {
 	clear: both;
+	background-color: lightgray;
 }
 
 .pictureRow ul {
