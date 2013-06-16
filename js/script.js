@@ -5,5 +5,5 @@ $(document).ready(function() {
 $(window).on('resize', showWidth);
 
 function showWidth(){
-	$('#width').html('Browser width: ' + $(window).width());
+	$('#width').html('Browser window width: ' + $(window).width());
 }

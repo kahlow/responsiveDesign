@@ -1,20 +1,19 @@
-/* http://lea.verou.me/css3patterns/#diagonal-stripes */
 body {
-	background-color: gray;
-	background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
+	background-color: lightgray;
 }
 
 #page {
 	background-color: white;
-	margin: 36px auto;
+	margin: 2% auto;
 	width: 90%;
 	font-family: Helvetica;
 }
 
 #page h1 {
 	text-align: center;
-	background-color: red;
-	
+	background-color: #2F4F4F;
+	color: white;
+	text-transform: uppercase;
 }
 
 .main {
@@ -24,30 +23,19 @@ body {
 .navbar {
 	float: left;
 	width: 16.483516483516%; /* 150 / 910 */
-	background-color: gray;
+}
+
+.navbar ul {
+	list-style: none;
 }
 
 .content {
 	float: right;
 	width: 83.516483516484%; /* 760 / 910 */
-	background-color: lightblue;
-}
-
-.leftColumn {
-	float: left;
-	width: 50%;
-	background-color: lightyellow;
-}
-
-.rightColumn {
-	float: right;
-	width: 50%;
-	background-color: lightgreen;
 }
 
 .pictureRow {
 	clear: both;
-	background-color: lightgray;
 }
 
 .pictureRow ul {
@@ -59,26 +47,87 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-	.navbar ul li {
-		display: inline;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	.navbar,
-	.leftColumn,
-	.rightColumn {
-		float: none;
+	#page {
 		width: 100%;
+		margin: 0%;
 	}
 
 	.main {
 		padding: 0px;
 	}
+
+	.navbar,
+	.content {
+		clear: both;
+		width: 100%;
+	}
+
+	.navbar {
+		background-color: darkgrey;
+	}
+
+	.navbar ul div li {
+		display: inline;
+		float: left;
+		padding-right: 1em;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	.main {
+		padding: 0px;
+	}
+
+	.navbar,
+	.content {
+		clear: both;
+		width: 100%;
+	}
+
+	.navbar {
+		background-color: darkgrey;
+	}
+
+	.l1,
+	.l3,
+	.l5 {
+		float: left;
+		width: 50%;
+	}
+
+	.l2,
+	.l4,
+	.l6 {
+		float: right;
+		width: 50%;
+	}
 }
 
 @media screen and (min-width: 1024px) {
-	.navbar ul {
-		list-style: none;
+	.p1,
+	.p2,
+	.p3,
+	.p4,
+	.p5 {
+		width: 50%;
+	}
+
+	.navbar {
+		width: 10.989011%; /* 100 / 910 */
+		float: left;
+	}
+
+	.content { 
+		width: 65.9340659%; /* 600 / 910 */
+		float: left;
+	}
+
+	.pictureRow {
+		width: 23.0769231%; /* 210 / 910 */
+		float: right;
+	}
+
+	.pictureRow ul li {
+		display: block;
 	}
 }
