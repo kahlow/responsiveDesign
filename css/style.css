@@ -21,6 +21,7 @@ body {
 }
 
 .navbar {
+	font-weight: bold;
 	float: left;
 	width: 16.483516483516%; /* 150 / 910 */
 }
@@ -32,10 +33,6 @@ body {
 .content {
 	float: right;
 	width: 83.516483516484%; /* 760 / 910 */
-}
-
-.pictureRow {
-	clear: both;
 }
 
 .pictureRow ul {
@@ -109,7 +106,7 @@ body {
 	.p3,
 	.p4,
 	.p5 {
-		width: 50%;
+		width: 100%;
 	}
 
 	.navbar {
@@ -118,13 +115,13 @@ body {
 	}
 
 	.content { 
-		width: 65.9340659%; /* 600 / 910 */
+		width: 54.9450549%; /* 500 / 910 */
 		float: left;
 	}
 
 	.pictureRow {
-		width: 23.0769231%; /* 210 / 910 */
-		float: right;
+		width: 34.0659341%; /* 310 / 910 */
+		float: left;
 	}
 
 	.pictureRow ul li {
